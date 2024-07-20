@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Light Theme */
+body.light {
+    color: #2d3748;
+    background-color: #739dc7;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtXuaAnMJd4WH5iFrR8uTDk8VL-9TaS3-ww&s'); /* Light mode background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Light Theme - Headings and Buttons */
+.light h1 {
+    color: #1a202c;
+}
+.light button {
+    color: #ffffff;
+    background-color: #31ce49;
+}
+
+/* Dark Theme */
+body.dark {
+    color: #c46f1f;
+    background-color: #000000;
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark Theme - Headings and Buttons */
+.dark h1 {
+    color: #f0a500;
+}
+.dark button {
+    color: #ffffff;
+    background-color: #c3b10f;
+}
+
+/* Container Styles */
+.container {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 10vh auto; /* Centering the container */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+/* Dark and Light Theme - Container Background Colors */
+.dark .container {
+    background-color: #2d3748;
+}
+.light .container {
+    background-color: #557a95;
+}
+
+/* Input and Select Styles */
+input, select {
+    padding: 0.5rem;
+    border: 1px solid #c7bfbf;
+    border-radius: 1.25rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #b2d8f7;
+}
+
+/* Dark Theme - Input and Select Styles */
+.dark input, .dark select {
+    background-color: #4a5568;
+    color: #ffffff;
+}
+
+/* Focus and Hover States */
+input:focus, select:focus {
+    outline: none;
+    border-color: #2e6aa1;
+}
+input:hover, select:hover {
+    background-color: #d0e4ff;
+}
+.dark input:hover, .dark select:hover {
+    background-color: #6b7280;
+}
+
+/* Todo Item Styles */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    border: 1px solid #d6805c;
+    background-color: #b2d8f7;
+    width: 100%;
+    flex-direction: column;
+    overflow: auto; /* Allow scrolling if needed */
+}
+
+/* Dark Theme - Todo Item Styles */
+.dark .todo-item {
+    background-color: #4a5568;
+    border-color: #2d3748;
+    color: #ffffff;
+}
+
+/* Inner Div Styling within Todo Item */
+.todo-item div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.todo-item div button {
+    margin-left: 0.5rem;
+    flex: 1;
+}
+
+/* Hover States for Todo Item */
+.todo-item:hover {
+    background-color: #ffeb3b;
+}
+.dark .todo-item:hover {
+    background-color: #ffc107;
+}
+
+/* Button Styles */
+button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 600px) {
+    .container {
+        max-width: 80%;
+    }
+    .todo-item {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 50%;
+    }
+    .todo-item {
+        height: 200px;
+    }
+    .todo-item div button {
+        margin-left: 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+  
