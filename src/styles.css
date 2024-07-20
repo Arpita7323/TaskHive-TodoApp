@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Light Theme */
+
 body.light {
     color: #2d3748;
     background-color: #739dc7;
@@ -14,7 +14,7 @@ body.light {
     background-repeat: no-repeat;
 }
 
-/* Light Theme - Headings and Buttons */
+
 .light h1 {
     color: #1a202c;
 }
@@ -23,7 +23,7 @@ body.light {
     background-color: #31ce49;
 }
 
-/* Dark Theme */
+
 body.dark {
     color: #c46f1f;
     background-color: #000000;
@@ -33,7 +33,7 @@ body.dark {
     background-repeat: no-repeat;
 }
 
-/* Dark Theme - Headings and Buttons */
+
 .dark h1 {
     color: #f0a500;
 }
@@ -42,18 +42,17 @@ body.dark {
     background-color: #c3b10f;
 }
 
-/* Container Styles */
 .container {
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 800px;
-    margin: 10vh auto; /* Centering the container */
-    overflow: auto; /* Allow scrolling if content overflows */
+    margin: 10vh auto; 
+    overflow: auto; 
 }
 
-/* Dark and Light Theme - Container Background Colors */
+
 .dark .container {
     background-color: #2d3748;
 }
@@ -61,7 +60,7 @@ body.dark {
     background-color: #557a95;
 }
 
-/* Input and Select Styles */
+
 input, select {
     padding: 0.5rem;
     border: 1px solid #c7bfbf;
@@ -71,13 +70,13 @@ input, select {
     background-color: #b2d8f7;
 }
 
-/* Dark Theme - Input and Select Styles */
+
 .dark input, .dark select {
     background-color: #4a5568;
     color: #ffffff;
 }
 
-/* Focus and Hover States */
+
 input:focus, select:focus {
     outline: none;
     border-color: #2e6aa1;
@@ -89,7 +88,7 @@ input:hover, select:hover {
     background-color: #6b7280;
 }
 
-/* Todo Item Styles */
+
 .todo-item {
     display: flex;
     justify-content: space-between;
@@ -100,17 +99,17 @@ input:hover, select:hover {
     background-color: #b2d8f7;
     width: 100%;
     flex-direction: column;
-    overflow: auto; /* Allow scrolling if needed */
+    overflow: auto; 
 }
 
-/* Dark Theme - Todo Item Styles */
+
 .dark .todo-item {
     background-color: #4a5568;
     border-color: #2d3748;
     color: #ffffff;
 }
 
-/* Inner Div Styling within Todo Item */
+
 .todo-item div {
     display: flex;
     justify-content: space-between;
@@ -121,7 +120,7 @@ input:hover, select:hover {
     flex: 1;
 }
 
-/* Hover States for Todo Item */
+
 .todo-item:hover {
     background-color: #ffeb3b;
 }
@@ -129,7 +128,7 @@ input:hover, select:hover {
     background-color: #ffc107;
 }
 
-/* Button Styles */
+
 button {
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -141,7 +140,7 @@ button:hover {
     opacity: 0.9;
 }
 
-/* Responsive Media Queries */
+
 @media (min-width: 600px) {
     .container {
         max-width: 80%;

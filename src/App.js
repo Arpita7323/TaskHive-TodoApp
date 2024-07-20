@@ -28,21 +28,22 @@ const App = () => {
   }, [darkMode]);
 
   const addTodo = (todo) => {
-    setTodos([...todos, todo]);
+    const newTodo = { ...todo, id: Date.now() }; // Add unique id
+    setTodos([...todos, newTodo]);
   };
 
   const toggleComplete = (todo) => {
     setTodos(
-      todos.map((t) => (t.title === todo.title ? { ...t, completed: !t.completed } : t))
+      todos.map((t) => (t.id === todo.id ? { ...t, completed: !t.completed } : t))
     );
   };
 
   const deleteTodo = (todo) => {
-    setTodos(todos.filter((t) => t.title !== todo.title));
+    setTodos(todos.filter((t) => t.id !== todo.id));
   };
 
   const updateTodo = (updatedTodo) => {
-    setTodos(todos.map((t) => (t.title === updatedTodo.title ? updatedTodo : t)));
+    setTodos(todos.map((t) => (t.id === updatedTodo.id ? updatedTodo : t)));
   };
 
   const filteredTodos = todos.filter((todo) => {
